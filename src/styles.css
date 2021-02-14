@@ -1,0 +1,28 @@
+:root {
+ --primary-color: #ffffff;
+ --sky-night-color: #09008a;
+ --sky-day-color: #00aeff;
+}
+
+
+.main-night {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ background-color: var(--sky-night-color);
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 16px;
+ text-align: center;
+ color: var(--primary-color);
+}
+
+.main-day {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ background-color: var(--sky-day-color);
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 16px;
+ text-align: center;
+ color: var(--primary-color);
+}

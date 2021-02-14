@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import Bottom from "./Bottom";
 import { callSunsetSunrise, DayState, evalDayState, getPosition, Position } from "./positions";
+import "./styles.css"
 
 function App() {
   const [dayState, setDayState] = useState<DayState>(DayState.Day)
@@ -12,9 +14,12 @@ function App() {
   })
 
   return (
-    <div>
-      <h1>{dayState}</h1>
-    </div>
+    <>
+      <div className={`main-${dayState.toLowerCase()}`}>
+        <h1>{dayState}</h1>
+      </div>
+      <Bottom />
+    </>
   );
 }
 
